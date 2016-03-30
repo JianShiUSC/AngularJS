@@ -4,9 +4,14 @@
         <link rel="stylesheet" type="text/css" href="/Users/lyk/Desktop/AngularJS/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
     </head>
     <body>
+        <div ng-controller="StoreController as store">              <!--  The scope of the controller is only inside here...  -->
+            <h1> {{store.product.name}} </h1>
+            <h2> ${{store.product.price}} </h2>
+            <p> {{store.product.description}} </p>
+        </div>                                                      <!--  The scope of the controller is only inside here...  -->
+        {{store.product.name}}     <!-- would never print a value! -->
         <script type="text/javascript" src="/Users/lyk/Desktop/AngularJS/angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
-        <p>{{"hello" + " you"}}</p>
     </body>
 </html>
 

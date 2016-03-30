@@ -1,4 +1,4 @@
-function Store()
+function StoreController()
 {
     alert('Welcome, Gregg!');
 }

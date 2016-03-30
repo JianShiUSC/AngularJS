@@ -3,13 +3,21 @@
     <head>
         <link rel="stylesheet" type="text/css" href="/Users/lyk/Desktop/AngularJS/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
     </head>
-    <body>
-        <div ng-controller="StoreController as store">              <!--  The scope of the controller is only inside here...  -->
-            <h1> {{store.product.name}} </h1>
-            <h2> ${{store.product.price}} </h2>
-            <p> {{store.product.description}} </p>
+    <body ng-controller="StoreController as store">
+        <div ng-hide="store.product.soldOut">              <!--  The scope of the controller is only inside here...  -->
+            <h1> {{store.products[0].name}} </h1>
+            <h2> ${{store.products[0].price}} </h2>
+            <p> {{store.products[0].description}} </p>
+            <button ng-show="store.products[0].canPurchase"> Add to Cart </button>
         </div>                                                      <!--  The scope of the controller is only inside here...  -->
-        {{store.product.name}}     <!-- would never print a value! -->
+
+        <div ng-hide="store.product.soldOut">
+            <h1> {{store.products[1].name}} </h1>
+            <h2> ${{store.products[1].price}} </h2>
+            <p> {{store.products[1].description}} </p>
+            <button ng-show="store.products[0].canPurchase"> Add to Cart </button>
+        </div>
+
         <script type="text/javascript" src="/Users/lyk/Desktop/AngularJS/angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
     </body>

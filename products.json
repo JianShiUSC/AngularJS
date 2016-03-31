@@ -1,0 +1,56 @@
+[
+    {
+        name: 'Awesome Multi-touch Keyboard',
+        price: 250.00,
+        description: "...",
+        images: [
+            {
+                full: 'gem-01.gif',
+                thumb: 'gem-02.gif',
+            },
+            {
+                full: 'gem-03.gif',
+                thumb: 'gem-04.gif',
+            }
+        ],
+        reviews: [
+            {
+                stars: 5,
+                body: "I love this product!",
+                author: "joe@thomas.com"
+            },
+            {
+                stars: 1,
+                body: "This product sucks",
+                author: "tim@hater.com"
+            }
+        ]
+    },
+    {
+        name : 'Pentagonal Gem',
+        price : 5.95,
+        description: ". . .",
+        images: [
+            {
+                full: 'gem-05.gif',
+                thumb: 'gem-06.gif',
+            },
+            {
+                full: 'gem-07.gif',
+                thumb: 'gem-08.gif',
+            }
+        ],
+        reviews: [
+            {
+                stars: 5,
+                body: "I love this product!",
+                author: "joe@thomas.com"
+            },
+            {
+                stars: 1,
+                body: "This product sucks",
+                author: "tim@hater.com"
+            }
+        ]
+    }
+];
